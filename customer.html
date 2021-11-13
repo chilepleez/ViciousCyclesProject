@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/vicious-cycles.css">
-    <title>Inventory | Vicious Motorcycles</title>
+    <title>Customers Say | Vicious Motorcycles</title>
 </head>
 <body>
     <div class="container">
@@ -26,13 +26,24 @@
             <li> <a href="repairshop.html"> Repairs</a></li>
         </ul>
     </nav>
-    <h2>Vicious Motorcycles Sells...</h2>
-        <p>We sell several brands of motorcycles including but not limited to suzuki, Harley Davidson, Indian and
-        Honda.
-        </p>
-    
-    <img src="images/inventory.jpg">
-    <img src="images/storeFloor.jpg">
+    <img src="images/blackandWhite.jpg" alt="motorcycles in black and white" class="center">
+    <img src="images/eventRide.jpg" alt="motorcycles at a rally" class="center">
+    <div id="form">
+        <fieldset>
+            <legend>Leave us a Review</legend>
+            <form class="grid">
+                <!--start form-->
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" size="50"><br>
+                    <label for="Review">Review:</label><br>
+                    <input type="text" id="review" name="review" size="100">
+                  
+            </form>
+        </fieldset>
+
+        
+        <input type="submit" id="submit" value="submit" class="btn">
+    </div>
     <footer>
         <h4> More Vicious Info </h4>
         <p>&copy;Vicious Motorcycles<a href="mailto:viciouscycles@gmail.com">Email Us</a></p>
@@ -42,8 +53,10 @@
     </div>
     
     
-    </footer>   
-</div>  
+    </footer>
+    </div>
+    
 </body>
+
 
 </html>

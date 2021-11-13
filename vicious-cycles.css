@@ -1,30 +1,213 @@
 * {
     margin: 0;
     padding: 0;
+
+} /* css reset */
+body {
+    background-color: midnightblue;
+    line-height: 1.5;
+    
+}
+/* style rules for body */
+figure {
+    width: 25%;
+    margin: 0 auto;
+}
+
+figure img {
+    border: solid 5px rgb(84, 45, 92);
+   
+
+} /* style rules for first image */
+
+figcaption {
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight:700;
+    color: black;
+
+} /* style rules for first image caption */
+
+h1, h2, h3, h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 4em;
+    padding: 1% 0;
+    color: #010b5b;
+
+} /* style rules for h1 */
+h2 {
+    text-align: center;
+    padding: 1% 0;
+    
 }
+h3 {
+padding: 1% auto;
+
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+    background-color:lemonchiffon
+
+    } /* style rules for container */
+
+nav {
+    width: 100%;
+    background-color:antiquewhite;
+    font-size: 20px;
+    
+
+} /* style rules for navigation */
+
+nav ul {
+    list-style-type: none;
+    padding: 1% 0;
+} /* style rules for nav unordered list */
+nav ul li {
+    display: inline-block;
+    width: 18%;
+    text-align: center;
+
+}
+nav ul li a:link {
+    display: block;
+    text-decoration: none;
+    color: rgb(80, 39, 10);
+    padding: 1% 0;
+}
+nav ul li a:visited {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 1% 0;
+}
+nav ul li a:hover {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(94, 46, 12);
+    padding: 1% 0;
+}
+
+
+
+
+
+aside {
+    width: 36%;
+    float: left;
+}
+
+/* fieldset {
+    color:cornsilk;
+    border: 1px solid rgb(255,232,57);
+    width: 800px;
+    margin:auto;
+    text-align: center;
+    align-content: center;
+}  trying to center the fieldset box but no luck */
+address {
+    float: left;
+}
+main {
+    width: 60%;
+    float: right;
+}
+.welcome {
+   text-align: center;
+   color: midnightblue;
+
+} /* style rules for welcome statement */
+.ride .rideImg {
+    float: left;
+}
+.ride .rideImg img {
+    border: solid 5px rgb(84, 45, 92);
+
+ }
+  /* style rules for second image */
+
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+
   } 
-    
-body {
-    background-color:steelblue
+  /* Style rules for form elements */
+fieldset input {
+	margin-bottom: 2%;
 }
-.container {
+
+fieldset {
+	font-size: 1.25em;
+	font-weight: bold;
     width: 85%;
     margin: 0 auto;
-    background-color:wheat
+
 }
-nav {
-    width: 100%;
-    background-color:antiquewhite;
+
+.btn {
+	border: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 5%;
+	background-color: #003399;
+	font-size: 1.25em;
+	border-radius: 10px;
+	color: white;
 }
-ul {
-    list-style-type: none;
+
+
+/* Style for the footer element */
+footer {
+	font-size: .9em;
+	text-align: center;
+    clear: both;
 }
+ 
+
+ 
+
+
+
+footer .social {
+    width: 5%;
+    display: flex;
+
+} /* style rules for the footer/ social media */
+
+footer .social img {
+    width: 50%;
+
+} /* style rules for the social media icons */
+
+/* Media query for tablet layout 
+@media only screen and (min-width: 600px) {
+    form {
+        width: 80%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        }
+    .btn {
+        grid-column: 1 / span 2;
+        padding: 3%;
+        
+    }
+    }*/
+
