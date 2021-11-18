@@ -140,6 +140,11 @@ main {
 
   } 
   /* Style rules for form elements */
+form, fieldset, input {
+
+
+    
+}
 fieldset input {
 	margin-bottom: 2%;
 }
@@ -159,7 +164,7 @@ fieldset {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	padding: 5%;
+	padding: 1% 5%;
 	background-color: #003399;
 	font-size: 1.25em;
 	border-radius: 10px;
