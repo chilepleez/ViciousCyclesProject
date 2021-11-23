@@ -26,6 +26,7 @@
             <li> <a href="customer.html"> Forum</a></li>
             <li> <a href="inventory.html"> Stock</a></li>
             <li> <a href="repairshop.html"> Repairs</a></li>
+            <li> <a href="hours.html"> Hours</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -45,29 +46,57 @@
             
             <p>Fill out Form and We will get back to you</p>
             
-            <div id="form">
-                <fieldset>
+            <form class="grid">
+                <fieldset class="info">
                     <legend>Customer Information</legend>
-                    <form class="grid">
+                  
                         <!--start form-->
-
-                        <input type="text" name="fName" id="fName">
                         <label for="fname">First name:</label>
-
-                        <input type="text" name="lName" id="lName">
+                        <input type="text" name="fName" id="fName">
+                        
                         <label for="lname">Last name:</label>
-
-                        <input type="email" name="email" id="email">
+                        <input type="text" name="lName" id="lName">
+                        
                         <label for="email">Email:</label>
-
-                        <input type="tel" name="phone" id="phone"><input type="text" name="cName" id="cName">
+                        <input type="email" name="email" id="email">
+                        
                         <label for="phone">Phone number:</label>
-                    </form>
+                        <input type="tel" name="phone"
+                         id="phone">
+                        
+                       
+                    
                 </fieldset>
+                <fieldset class="radio">
+                    <legend>Choose your favorite motorcycle:</legend>
+                    
 
+  <ol>
+    <li><input type="radio" id="kawasaki" name="brand" value="kawasaki">Kawasaki</li>
+    <li><input type="radio" id="harleydavidson" name="brand" value="harleydavidson">Harley Davidson</li>
+    <li><input type="radio" id="indian" name="brand" value="indian">Indian</li>
+    <li><input type="radio" id="yamaha" name="brand" value="yamaha">Yamaha</li>
+</ol>
+  
+                </fieldset>
+<fieldset class="check">
+    
+        <legend>Why Do You Ride?</legend>
+        <ol>
+        
+        <li><input type="checkbox" id="reason1" name="reason1" value="reason1">
+        <label for="reason1"> I commute to and from work</label></li>
+        <li><input type="checkbox" id="reason2" name="reason2" value="reason2">
+        <label for="reason3"> I compete</label></li>
+        <li><input type="checkbox" id="reason3" name="reason3" value="reason3">
+        <label for="reason3"> I collect</label></li>
+        <li><input type="checkbox" id="reason4"
+        <label for="reason4"> leisure</label></li>
+    </ol>
+</fieldset>
                 
                 <input type="submit" id="submit" value="submit" class="btn">
-            </div>
+            </form>
             
 
 

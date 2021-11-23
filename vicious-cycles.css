@@ -15,7 +15,7 @@ figure {
 }
 
 figure img {
-    border: solid 5px rgb(84, 45, 92);
+    border: solid 5px rgb(97, 48, 13);
    
 
 } /* style rules for first image */
@@ -37,7 +37,7 @@ h1 {
     text-align: center;
     font-size: 4em;
     padding: 1% 0;
-    color: #010b5b;
+    color: #071055;
 
 } /* style rules for h1 */
 h2 {
@@ -52,21 +52,23 @@ padding: 1% auto;
 .container {
     width: 85%;
     margin: 0 auto;
-    background-color:lemonchiffon
+    background-color:rgb(245, 227, 234)
 
     } /* style rules for container */
 
 nav {
     width: 100%;
-    background-color:antiquewhite;
+    background-color: midnightblue;
+    
     font-size: 20px;
+    
     
 
 } /* style rules for navigation */
 
 nav ul {
     list-style-type: none;
-    padding: 1% 0;
+    
 } /* style rules for nav unordered list */
 nav ul li {
     display: inline-block;
@@ -75,22 +77,22 @@ nav ul li {
 
 }
 nav ul li a:link {
-    display: block;
+    display: inline-block;
     text-decoration: none;
-    color: rgb(80, 39, 10);
+    color: antiquewhite;
     padding: 1% 0;
 }
 nav ul li a:visited {
     display: block;
     text-decoration: none;
-    color: black;
+    color: antiquewhite;
     padding: 1% 0;
 }
 nav ul li a:hover {
     display: block;
     text-decoration: none;
-    color: white;
-    background-color: rgb(94, 46, 12);
+    color: black;
+    background-color: antiquewhite;
     padding: 1% 0;
 }
 
@@ -101,6 +103,9 @@ nav ul li a:hover {
 aside {
     width: 36%;
     float: left;
+}
+aside section {
+    margin-left: 2%;
 }
 
 /* fieldset {
@@ -124,10 +129,12 @@ main {
 
 } /* style rules for welcome statement */
 .ride .rideImg {
-    float: left;
+    width: 80%;
+    margin: 0 auto;
 }
 .ride .rideImg img {
     border: solid 5px rgb(84, 45, 92);
+    width: 100%;
 
  }
   /* style rules for second image */
@@ -140,22 +147,71 @@ main {
 
   } 
   /* Style rules for form elements */
-form, fieldset, input {
 
-
-    
+  form {
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color:rgb(94, 46, 13);
+    background-color: rgb(146, 140, 135);
 }
-fieldset input {
-	margin-bottom: 2%;
-}
 
-fieldset {
+  fieldset {
 	font-size: 1.25em;
 	font-weight: bold;
     width: 85%;
     margin: 0 auto;
 
 }
+.grid .info label,  .grid .info input {
+    display: block;
+}
+.radio ol li {
+    list-style-type: none;
+    padding: 1%;
+    
+}
+.check ol li {
+    list-style-type: none;
+    padding: 1%;
+    
+}
+/* pretty radio */
+label > input[type="radio"] {
+    display: none;
+  }
+  label > input[type="radio"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: gray;
+  }
+  label > input[type="radio"]:checked + * {
+    color: teal;
+  }
+  label > input[type="radio"]:checked + *::before {
+    background: radial-gradient(teal 0%, teal 40%, transparent 50%, transparent);
+    border-color: teal;
+  }
+  
+  /* basic layout */
+  fieldset {
+    margin: 20px;
+    max-width: 400px;
+  }
+  label > input[type="radio"] + * {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+  }
+
 
 .btn {
 	border: 0;
@@ -165,7 +221,7 @@ fieldset {
 	margin-right: auto;
 	display: block;
 	padding: 1% 5%;
-	background-color: #003399;
+	background-color: midnightblue;
 	font-size: 1.25em;
 	border-radius: 10px;
 	color: white;
@@ -197,13 +253,7 @@ footer .social img {
 
 /* Media query for tablet layout 
 @media only screen and (min-width: 600px) {
-    form {
-        width: 80%;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    
     .grid {
         display: grid;
         grid-template-columns: auto auto;
